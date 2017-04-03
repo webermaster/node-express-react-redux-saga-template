@@ -1,0 +1,5 @@
+--compilers js:babel-register,jsx:babel-register,jsx:babel-polyfill
+--recursive
+--colors
+--reporter list
+--require test/setup
