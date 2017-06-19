@@ -7,9 +7,8 @@ module.exports = {
     './public/scripts/main',
   ],
   module: {
-    loaders: [
-      {test: /.json$/, loader: 'json'},
-      {test: /.jsx?$/, loader: 'babel', exclude: /node_modules/}
+    rules: [
+      {test: /.jsx?$/, use : [{loader: 'babel-loader'}], exclude: /node_modules/}
     ],
   },
   output: {
@@ -23,8 +22,7 @@ module.exports = {
       },
     }),
     new webpack.IgnorePlugin(/regenerator|nodent|js-beautify/, /ajv/),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false,
@@ -35,10 +33,9 @@ module.exports = {
   ],
   resolve: {
     extensions: [
-      '',
       '.js',
       '.json',
-      '.jsx',
+      '.jsx'
     ],
   },
 }

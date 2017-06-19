@@ -2,7 +2,6 @@ import chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
-import 'sinon-as-promised';
 import {jsdom} from 'jsdom'
 
 // example of using the should DSL without having to import it anywhere

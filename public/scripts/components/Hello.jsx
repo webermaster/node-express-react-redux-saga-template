@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Hello = React.createClass({
-    getInitialState() {
-        return {fullName: 'World'};
-    },
+class Hello extends  React.Component{
+    constructor(props) {
+        super(props)
+        this.state = {fullName: 'World'};
+    }
     render() {
         const {fullName} = this.state;
         return (
@@ -14,6 +15,6 @@ const Hello = React.createClass({
             </div>
         );
     }
-});
+}
 
 export default Hello;

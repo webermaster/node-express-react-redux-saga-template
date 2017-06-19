@@ -7,11 +7,10 @@ const makeMiddleware = () => {
   const middleware = [ sagaMiddleware ];
 
   if ( process.env.NODE_ENV !== 'production' ) {
-    const logger = require('redux-logger'); // eslint-disable-line global-require
-
-    return middleware.concat(logger({
+    const {createLogger} = require('redux-logger');
+    return middleware.concat(createLogger({
       collapsed: true,
-    }))
+    }));
   }
 
   return middleware

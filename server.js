@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(compression());
 
 if ( process.env.NODE_ENV !== 'production' ) {
-    const webpackDevMiddleware = require('webpack-dev-middleware');
+    const webpackDevMiddleware = require('webpack-dev-middleware-webpack-2');
     const webpack = require('webpack');
     const middlewareOptions = {
         stats: { colors: true },
