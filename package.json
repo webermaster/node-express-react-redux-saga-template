@@ -7,7 +7,7 @@
         "dev": "cross-env NODE_ENV=development node ./bin/www",
         "clean": "rimraf public/styles/style.css public/scripts/bundle.js public/scripts/bundle.js.map",
         "lessc": "cross-env lessc ./public/styles/style.less ./public/styles/style.css",
-        "package": "cross-env NODE_ENV=production npm run lessc && webpack",
+        "package": "node_modules/cross-env/bin/cross-env.js NODE_ENV=production npm run lessc && webpack",
         "test": "mocha test",
         "test:dev": "mocha --watch test"
     },
@@ -55,5 +55,6 @@
     "engines": {
         "node": "^8.1.2",
         "npm": "^5.0.3"
-    }
+    },
+    "false": {}
 }
