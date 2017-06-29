@@ -1,13 +1,12 @@
 # Webermaster Template for NodeJS/Express/React/Redux projects
----
 
-##Run Locally
+## Run Locally
 ```bash
 npm install
 npm run dev
 ```
 
-##Package for Deployment
+## Package for Deployment
 ```bash
 npm install
 npm dedupe
@@ -15,7 +14,7 @@ npm prune --production
 npm run package
 ```
 
-##Deployment (from inside project root)
+## Deployment (from inside project root)
 ```bash
 npm install
 npm dedupe
