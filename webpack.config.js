@@ -8,7 +8,7 @@ module.exports = {
   ],
   module: {
     rules: [
-      {test: /.jsx?$/, use : [{loader: 'babel-loader'}], exclude: /node_modules/}
+      {test: /.js?$/, use : [{loader: 'babel-loader'}], exclude: /node_modules/}
     ],
   },
   output: {
@@ -34,8 +34,7 @@ module.exports = {
   resolve: {
     extensions: [
       '.js',
-      '.json',
-      '.jsx'
+      '.json'
     ],
   },
 }
