@@ -1,4 +1,4 @@
-# Webermaster Template for NodeJS/Express/React/Redux projects
+# Webermaster Template for NodeJS/Express/AngularJS projects
 
 ## Run Locally
 ```bash
